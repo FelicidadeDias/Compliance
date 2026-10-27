@@ -27,11 +27,11 @@ const PRODUCT_CONFIG = {
 
     regularPriceAOA: 35000,
 
-    promoEnabled: true,
+    promoEnabled: false,
 
-    promoPriceAOA: 50000,
+    promoPriceAOA: null,
 
-    promoEndAt: true,
+    promoEndAt: null,
 
     checkoutUrl:
         "https://pay.kursinha.com/c/6a8a4a89295332d42e7bfa1b?afiliateId=6ac389dd7d7288b38e701a51",
