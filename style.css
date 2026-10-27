@@ -1360,3 +1360,66 @@ summary:focus-visible {
     }
 
 }
+
+
+/* MELHORIAS DE CONVERSÃO E ACESSIBILIDADE */
+.button,
+.header-button,
+.text-link,
+.faq-item summary {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.button:focus-visible,
+.header-button:focus-visible,
+.text-link:focus-visible,
+.faq-item summary:focus-visible {
+    outline: 3px solid var(--blue-light);
+    outline-offset: 4px;
+}
+
+.hero-description {
+    max-width: 58ch;
+    line-height: 1.85;
+}
+
+.offer-card {
+    scroll-margin-top: 90px;
+}
+
+@media (max-width: 700px) {
+    .hero-description {
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+
+    .hero-actions .button,
+    .offer-button,
+    .final-cta .button,
+    .mobile-cta .button {
+        min-height: 54px;
+        padding: 15px 18px;
+        font-size: 0.82rem;
+        line-height: 1.4;
+        white-space: normal;
+        text-align: center;
+    }
+
+    .offer-features {
+        gap: 14px;
+    }
+
+    .offer-features > div {
+        align-items: flex-start;
+        line-height: 1.55;
+    }
+
+    .checkout-note,
+    .offer-disclaimer {
+        line-height: 1.7;
+    }
+
+    .faq-item summary {
+        line-height: 1.5;
+    }
+}
