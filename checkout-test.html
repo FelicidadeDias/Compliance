@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-AO">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#071523">
+  <title>Teste do Checkout | Compliance Nível Básico</title>
+  <style>
+    :root{color-scheme:light;--navy:#071523;--blue:#1769aa;--pale:#f3f6fa;--text:#172638;--muted:#64748b;--line:#e0e7ef}
+    *{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--pale);color:var(--text);line-height:1.65}
+    header{background:var(--navy);color:white;padding:24px 18px}header div,main{width:min(760px,100% - 32px);margin:auto}
+    header strong{letter-spacing:.08em}main{padding:32px 0 56px}
+    .card{background:white;border:1px solid var(--line);border-radius:18px;padding:clamp(20px,5vw,34px);box-shadow:0 16px 40px rgba(7,21,35,.06)}
+    h1{font-size:clamp(1.7rem,5vw,2.4rem);line-height:1.2;margin:8px 0 14px;letter-spacing:-.04em}
+    p{margin:0 0 16px}.muted{color:var(--muted);font-size:.92rem}
+    .tag{display:inline-block;padding:5px 10px;border-radius:999px;background:#e8f3ff;color:var(--blue);font-size:.75rem;font-weight:800;letter-spacing:.05em}
+    .price{font-size:1.4rem;font-weight:800;margin:18px 0}
+    .button{display:flex;align-items:center;justify-content:center;width:100%;min-height:54px;padding:14px 18px;background:var(--blue);color:white;border-radius:10px;text-decoration:none;font-weight:800;text-align:center}
+    .button:focus-visible,a:focus-visible{outline:3px solid #62b6ff;outline-offset:3px}
+    h2{font-size:1.15rem;margin:28px 0 10px}
+    ol{padding-left:22px}li{padding:5px 0}
+    .warning{padding:14px;border-left:4px solid #d4af63;background:#fff8e8;border-radius:8px;font-size:.9rem}
+    .status{margin-top:14px;font-size:.88rem;color:var(--muted)}
+    footer{text-align:center;padding:0 16px 28px;color:var(--muted);font-size:.8rem}
+  </style>
+</head>
+<body>
+  <header><div><strong>COMPLIANCE · NÍVEL BÁSICO</strong></div></header>
+  <main>
+    <section class="card">
+      <span class="tag">PÁGINA DE TESTE</span>
+      <h1>Verificar o acesso ao checkout</h1>
+      <p>Esta página ajuda a testar se o botão de compra encaminha para o checkout associado à formação. Não é necessário nem recomendado concluir uma compra para fazer o teste inicial.</p>
+      <div class="price">Preço de referência na página: 35.000 AOA</div>
+      <a class="button" id="checkoutTest" href="https://pay.kursinha.com/c/6a8a4a89295332d42e7bfa1b?afiliateId=6ac389dd7d7288b38e701a51" target="_blank" rel="noopener noreferrer">Abrir checkout numa nova aba →</a>
+      <p class="status" id="testStatus" role="status">Link configurado. Ao clicar, o checkout abre num novo separador.</p>
+      <h2>Lista de verificação</h2>
+      <ol>
+        <li>Confirma que a página de checkout abre sem erro.</li>
+        <li>Confirma que o nome do produto corresponde a “Compliance Nível Básico”.</li>
+        <li>Confirma o preço final e se existem taxas adicionais antes de pagar.</li>
+        <li>Verifica os métodos de pagamento disponíveis para ti.</li>
+        <li>Confirma as condições de acesso, garantia e reembolso apresentadas pelo vendedor.</li>
+        <li>Testa o botão de compra da página principal no telemóvel e no computador.</li>
+      </ol>
+      <p class="warning"><strong>Importante:</strong> a página de teste não consegue confirmar automaticamente se o checkout externo está operacional ou se a atribuição de afiliado foi registada. Isso só pode ser confirmado abrindo o checkout e, para a atribuição, consultando os relatórios ou o suporte da plataforma. Não introduzas dados de pagamento nem concluas uma compra apenas para testar.</p>
+      <p style="margin-top:20px"><a href="index.html">← Voltar à página de vendas</a></p>
+    </section>
+  </main>
+  <footer>Página técnica de teste · Não faz parte da oferta oficial do produtor.</footer>
+</body>
+</html>
